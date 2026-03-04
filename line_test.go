@@ -1,8 +1,8 @@
 package gologicgates_test
 
 import (
-	gologicgates "github.com/jhtrauntvein/go-logic-gates"
-	truthtable "github.com/jhtrauntvein/go-logic-gates/truth-table"
+	gologicgates "github.com/jtrauntvein/go-logic-gates"
+	truthtable "github.com/jtrauntvein/go-logic-gates/truth-table"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 )

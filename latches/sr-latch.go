@@ -1,8 +1,8 @@
 package latches
 
 import (
-	gologicgates "github.com/jhtrauntvein/go-logic-gates"
-	truthtable "github.com/jhtrauntvein/go-logic-gates/truth-table"
+	gologicgates "github.com/jtrauntvein/go-logic-gates"
+	truthtable "github.com/jtrauntvein/go-logic-gates/truth-table"
 )
 
 // Defines a two input latch device that implements the BasicGate interface by encapsulating

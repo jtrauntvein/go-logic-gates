@@ -1,6 +1,6 @@
 package registers
 
-import gates "github.com/jhtrauntvein/go-logic-gates"
+import gates "github.com/jtrauntvein/go-logic-gates"
 
 const (
 	TriBufferData   = 0
@@ -40,65 +40,65 @@ func (b *TriStateBuffer) Evaluate() []bool {
 }
 
 func (b *TriStateBuffer) ConnectInputProbe(probe gates.LineProbe, index int, send_value ...bool) error {
-   var err error
-   switch index {
-   case TriBufferData:
-      b.input.ConnectProbe(probe, send_value...)
+	var err error
+	switch index {
+	case TriBufferData:
+		b.input.ConnectProbe(probe, send_value...)
 
-   case TriBufferEnable:
-      b.enable.ConnectProbe(probe, send_value...)
+	case TriBufferEnable:
+		b.enable.ConnectProbe(probe, send_value...)
 
-   default:
-      err = gates.ErrGetInvalidLine
-   }
-   return err
+	default:
+		err = gates.ErrGetInvalidLine
+	}
+	return err
 }
 
 func (b *TriStateBuffer) DisconnectInputProbe(probe gates.LineProbe, index int) error {
-   var err error
-   switch index {
-   case TriBufferData:
-      b.input.DisconnectProbe(probe)
+	var err error
+	switch index {
+	case TriBufferData:
+		b.input.DisconnectProbe(probe)
 
-   case TriBufferEnable:
-      b.enable.DisconnectProbe(probe);
+	case TriBufferEnable:
+		b.enable.DisconnectProbe(probe)
 
-   default:
-      err = gates.ErrGetInvalidLine
-   }
-   return err
+	default:
+		err = gates.ErrGetInvalidLine
+	}
+	return err
 }
 
 func (b *TriStateBuffer) ConnectOutputProbe(probe gates.LineProbe, index int, send_value ...bool) error {
-   var err error
-   switch index {
-   case TriBufferData:
-      b.output.ConnectProbe(probe)
+	var err error
+	switch index {
+	case TriBufferData:
+		b.output.ConnectProbe(probe)
 
-   default:
-      err = gates.ErrGetInvalidLine
-   }
-   return err
+	default:
+		err = gates.ErrGetInvalidLine
+	}
+	return err
 }
 
 func (b *TriStateBuffer) DisconnectOutputProbe(probe gates.LineProbe, index int) error {
-   var err error
-   switch index {
-   case TriBufferData:
-      b.output.DisconnectProbe(probe)
+	var err error
+	switch index {
+	case TriBufferData:
+		b.output.DisconnectProbe(probe)
 
-   default:
-      err = gates.ErrGetInvalidLine
-   }
-   return err
+	default:
+		err = gates.ErrGetInvalidLine
+	}
+	return err
 }
 
 // Return:
 //   - *TriStateBuffer: returns a new tri state buffer
 func NewTriStateBuffer() *TriStateBuffer {
-   return &TriStateBuffer{
-      input: gates.NewLine(),
-      output: gates.NewLine(),
-      enable: gates.NewLine(),
-   }
+	return &TriStateBuffer{
+		input:  gates.NewLine(),
+		output: gates.NewLine(),
+		enable: gates.NewLine(),
+	}
 }

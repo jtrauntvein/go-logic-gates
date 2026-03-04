@@ -1,8 +1,8 @@
 package gologicgates_test
 
 import (
-	gologicgates "github.com/jhtrauntvein/go-logic-gates"
-	"github.com/jhtrauntvein/go-logic-gates/latches"
+	gologicgates "github.com/jtrauntvein/go-logic-gates"
+	"github.com/jtrauntvein/go-logic-gates/latches"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 )

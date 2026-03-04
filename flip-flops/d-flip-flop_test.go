@@ -1,8 +1,8 @@
 package flipflops_test
 
 import (
-	flipflops "github.com/jhtrauntvein/go-logic-gates/flip-flops"
-	testutils "github.com/jhtrauntvein/go-logic-gates/test-utils"
+	flipflops "github.com/jtrauntvein/go-logic-gates/flip-flops"
+	testutils "github.com/jtrauntvein/go-logic-gates/test-utils"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 )

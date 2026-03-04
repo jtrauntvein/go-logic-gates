@@ -1,9 +1,9 @@
 package registers
 
 import (
-	gologicgates "github.com/jhtrauntvein/go-logic-gates"
-	dflipflops "github.com/jhtrauntvein/go-logic-gates/flip-flops"
-	truthtable "github.com/jhtrauntvein/go-logic-gates/truth-table"
+	gologicgates "github.com/jtrauntvein/go-logic-gates"
+	dflipflops "github.com/jtrauntvein/go-logic-gates/flip-flops"
+	truthtable "github.com/jtrauntvein/go-logic-gates/truth-table"
 )
 
 // Defines the indices for lines for this device

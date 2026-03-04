@@ -1,8 +1,8 @@
 package latches_test
 
 import (
-	"github.com/jhtrauntvein/go-logic-gates/latches"
-	testutils "github.com/jhtrauntvein/go-logic-gates/test-utils"
+	"github.com/jtrauntvein/go-logic-gates/latches"
+	testutils "github.com/jtrauntvein/go-logic-gates/test-utils"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 )

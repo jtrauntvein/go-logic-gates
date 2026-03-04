@@ -1,7 +1,7 @@
 package truthtable_test
 
 import (
-	truthtable "github.com/jhtrauntvein/go-logic-gates/truth-table"
+	truthtable "github.com/jtrauntvein/go-logic-gates/truth-table"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 )

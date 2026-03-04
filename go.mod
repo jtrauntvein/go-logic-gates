@@ -1,4 +1,4 @@
-module github.com/jhtrauntvein/go-logic-gates
+module github.com/jtrauntvein/go-logic-gates
 
 go 1.24.3
 

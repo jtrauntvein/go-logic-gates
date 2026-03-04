@@ -1,9 +1,9 @@
 package flipflops
 
 import (
-	gologicgates "github.com/jhtrauntvein/go-logic-gates"
-	latches "github.com/jhtrauntvein/go-logic-gates/latches"
-	truthtable "github.com/jhtrauntvein/go-logic-gates/truth-table"
+	gologicgates "github.com/jtrauntvein/go-logic-gates"
+	latches "github.com/jtrauntvein/go-logic-gates/latches"
+	truthtable "github.com/jtrauntvein/go-logic-gates/truth-table"
 )
 
 // defines the indices for the input lines

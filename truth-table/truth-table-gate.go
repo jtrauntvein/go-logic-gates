@@ -4,7 +4,7 @@ import (
 	"errors"
 	"math"
 
-	gologicgates "github.com/jhtrauntvein/go-logic-gates"
+	gologicgates "github.com/jtrauntvein/go-logic-gates"
 )
 
 // Defines errors that can be returned by the truth table gate
